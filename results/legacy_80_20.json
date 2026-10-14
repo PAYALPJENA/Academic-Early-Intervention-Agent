@@ -1,0 +1,25 @@
+{
+  "note": "Original notebook results on the old 80/20 split (100,000 test students, single seed). Not comparable one-to-one with the new 70/15/15 results.",
+  "models": {
+    "Logistic Regression": {
+      "accuracy": 0.8608,
+      "high_risk_precision": 0.6901,
+      "high_risk_recall": 0.2048,
+      "high_risk_f1": 0.3158
+    },
+    "RF (unconstrained)": {
+      "accuracy": 0.8739,
+      "high_risk_precision": 0.8517,
+      "high_risk_recall": 0.2477,
+      "high_risk_f1": 0.3838,
+      "saved_model_size_mb": 819.2
+    },
+    "HistGradientBoosting": {
+      "accuracy": 0.8823,
+      "high_risk_precision": 0.7641,
+      "high_risk_recall": 0.3838,
+      "high_risk_f1": 0.5109,
+      "saved_model_size_mb": 0.58
+    }
+  }
+}

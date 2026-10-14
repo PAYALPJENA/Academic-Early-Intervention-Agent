@@ -1,0 +1,58 @@
+{
+  "model": "ft_transformer",
+  "label": "FT-Transformer (100k subsample; no CV)",
+  "seed": 0,
+  "params": {
+    "lr": 0.0003,
+    "d_token": 64,
+    "n_blocks": 2,
+    "epochs": 6
+  },
+  "cv": [],
+  "training_rows": 100000,
+  "val": {
+    "accuracy": 0.88712,
+    "balanced_accuracy": 0.6756912767823744,
+    "macro_f1": 0.7213913158098834,
+    "weighted_f1": 0.8804399818272168,
+    "high_risk_precision": 0.701707779886148,
+    "high_risk_recall": 0.4812597605413847,
+    "high_risk_f1": 0.5709433379651073,
+    "medium_risk_precision": 0.9099455334338554,
+    "medium_risk_recall": 0.9581524204523362,
+    "medium_risk_f1": 0.9334269795924809,
+    "low_risk_precision": 0.7521367521367521,
+    "low_risk_recall": 0.5876616493534026,
+    "low_risk_f1": 0.6598036298720619,
+    "roc_auc_ovr_macro": 0.9410416234041857,
+    "high_risk_pr_auc": 0.6692214366324875,
+    "medium_risk_pr_auc": 0.9760403634144224,
+    "low_risk_pr_auc": 0.7654838664204237,
+    "macro_pr_auc": 0.8035818888224444,
+    "support": {
+      "High Risk": 3842,
+      "Medium Risk": 61724,
+      "Low Risk": 9434
+    },
+    "confusion_matrix": [
+      [
+        1849,
+        1993,
+        0
+      ],
+      [
+        756,
+        59141,
+        1827
+      ],
+      [
+        30,
+        3860,
+        5544
+      ]
+    ]
+  },
+  "final_fit_seconds": 19.754775524139404,
+  "saved_model_size_mb": 0.356211,
+  "saved_model_path": "models/pipeline/ft_transformer.joblib"
+}

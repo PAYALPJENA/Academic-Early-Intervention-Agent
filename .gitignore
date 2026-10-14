@@ -1,0 +1,68 @@
+# Python environments and caches
+.venv/
+.venv*/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.streamlit/cache/
+
+# Node dependencies
+**/node_modules/
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+id_rsa
+id_ed25519
+*.p12
+*.pfx
+
+# Temporary and office files
+*.tmp
+*.log
+~$*
+
+# Local datasets
+data/raw/*.csv
+data/processed/
+
+# Non-deployment model artifacts. Keep the selected pipeline and legacy fallback.
+models/*.pkl
+models/pipeline/*.joblib
+!models/pipeline/catboost.joblib
+old_models/logistic_regression.pkl
+old_models/random_forest.pkl
+
+# Experiment caches; retain aggregate JSON and selected report run records
+results/runs/*.npz
+results/runs/folds/
+results/runs/tuning_partial/
+results/imbalance/checkpoints/
+results/imbalance/smoke*/
+
+# Backups and staged transfer artifacts
+*_backup_*/
+*.backup_*
+*.backup
+colab_import_*/
+*.zip
+_archive/
+paper_output/
+scratch/
+brag-output/work/
+
+# Research-paper assets and rendered outputs are released separately
+report/assets/
+report/*.docx
+report/*.pdf
+.claude/
+.agents/

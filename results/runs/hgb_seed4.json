@@ -1,0 +1,362 @@
+{
+    "model":  "hgb",
+    "label":  "HistGradientBoosting",
+    "seed":  4,
+    "params":  {
+
+               },
+    "cv":  [
+               {
+                   "accuracy":  0.8867285714285714,
+                   "balanced_accuracy":  0.667915099634569,
+                   "macro_f1":  0.7188444685992247,
+                   "weighted_f1":  0.8793231450712495,
+                   "high_risk_precision":  0.741417744092733,
+                   "high_risk_recall":  0.4637479085331846,
+                   "high_risk_f1":  0.5705952993652428,
+                   "medium_risk_precision":  0.9078536953738057,
+                   "medium_risk_recall":  0.9599201527512584,
+                   "medium_risk_f1":  0.9331612162937464,
+                   "low_risk_precision":  0.7463100979102733,
+                   "low_risk_recall":  0.580077237619264,
+                   "low_risk_f1":  0.6527768901386848,
+                   "roc_auc_ovr_macro":  0.9413530927152669,
+                   "high_risk_pr_auc":  0.6813166777086126,
+                   "medium_risk_pr_auc":  0.976248073469553,
+                   "low_risk_pr_auc":  0.7643932763114343,
+                   "macro_pr_auc":  0.8073193424965334,
+                   "support":  {
+                                   "High Risk":  3586,
+                                   "Medium Risk":  57610,
+                                   "Low Risk":  8804
+                               },
+                   "confusion_matrix":  [
+                                            [
+                                                1663,
+                                                1919,
+                                                4
+                                            ],
+                                            [
+                                                577,
+                                                55301,
+                                                1732
+                                            ],
+                                            [
+                                                3,
+                                                3694,
+                                                5107
+                                            ]
+                                        ],
+                   "fit_seconds":  20.571795225143433
+               },
+               {
+                   "accuracy":  0.8868857142857143,
+                   "balanced_accuracy":  0.6647009451610095,
+                   "macro_f1":  0.7163073923685026,
+                   "weighted_f1":  0.8792033901065428,
+                   "high_risk_precision":  0.7335733573357336,
+                   "high_risk_recall":  0.45454545454545453,
+                   "high_risk_f1":  0.5612947658402204,
+                   "medium_risk_precision":  0.9073728035667453,
+                   "medium_risk_recall":  0.960908885764377,
+                   "medium_risk_f1":  0.9333737997083049,
+                   "low_risk_precision":  0.7525849335302807,
+                   "low_risk_recall":  0.578648495173197,
+                   "low_risk_f1":  0.6542536115569824,
+                   "roc_auc_ovr_macro":  0.9397566632349131,
+                   "high_risk_pr_auc":  0.6765659876891011,
+                   "medium_risk_pr_auc":  0.9752073542733948,
+                   "low_risk_pr_auc":  0.7586245842571442,
+                   "macro_pr_auc":  0.8034659754065467,
+                   "support":  {
+                                   "High Risk":  3586,
+                                   "Medium Risk":  57609,
+                                   "Low Risk":  8805
+                               },
+                   "confusion_matrix":  [
+                                            [
+                                                1630,
+                                                1950,
+                                                6
+                                            ],
+                                            [
+                                                583,
+                                                55357,
+                                                1669
+                                            ],
+                                            [
+                                                9,
+                                                3701,
+                                                5095
+                                            ]
+                                        ],
+                   "fit_seconds":  16.523250579833984
+               },
+               {
+                   "accuracy":  0.8881571428571429,
+                   "balanced_accuracy":  0.6621666805774545,
+                   "macro_f1":  0.7171946480308479,
+                   "weighted_f1":  0.8799918145884164,
+                   "high_risk_precision":  0.755753875058713,
+                   "high_risk_recall":  0.4486893474623536,
+                   "high_risk_f1":  0.563079615048119,
+                   "medium_risk_precision":  0.9066777745107648,
+                   "medium_risk_recall":  0.9634779287958478,
+                   "medium_risk_f1":  0.9342152877712978,
+                   "low_risk_precision":  0.7601082218548023,
+                   "low_risk_recall":  0.5743327654741625,
+                   "low_risk_f1":  0.6542890412731271,
+                   "roc_auc_ovr_macro":  0.941496852351816,
+                   "high_risk_pr_auc":  0.6823974095032597,
+                   "medium_risk_pr_auc":  0.9761725413906699,
+                   "low_risk_pr_auc":  0.7642322111656453,
+                   "macro_pr_auc":  0.807600720686525,
+                   "support":  {
+                                   "High Risk":  3586,
+                                   "Medium Risk":  57609,
+                                   "Low Risk":  8805
+                               },
+                   "confusion_matrix":  [
+                                            [
+                                                1609,
+                                                1967,
+                                                10
+                                            ],
+                                            [
+                                                518,
+                                                55505,
+                                                1586
+                                            ],
+                                            [
+                                                2,
+                                                3746,
+                                                5057
+                                            ]
+                                        ],
+                   "fit_seconds":  15.716220378875732
+               },
+               {
+                   "accuracy":  0.8868857142857143,
+                   "balanced_accuracy":  0.6667962714147855,
+                   "macro_f1":  0.7188280031201809,
+                   "weighted_f1":  0.8791648461279459,
+                   "high_risk_precision":  0.7399912010558733,
+                   "high_risk_recall":  0.4690462911321807,
+                   "high_risk_f1":  0.5741594128690903,
+                   "medium_risk_precision":  0.906918856955703,
+                   "medium_risk_recall":  0.961325487337048,
+                   "medium_risk_f1":  0.9333299627551106,
+                   "low_risk_precision":  0.7533773641549084,
+                   "low_risk_recall":  0.5700170357751277,
+                   "low_risk_f1":  0.6489946337363419,
+                   "roc_auc_ovr_macro":  0.9420761541021427,
+                   "high_risk_pr_auc":  0.6874656293941769,
+                   "medium_risk_pr_auc":  0.9763244302427218,
+                   "low_risk_pr_auc":  0.7621947624954117,
+                   "macro_pr_auc":  0.8086616073774368,
+                   "support":  {
+                                   "High Risk":  3586,
+                                   "Medium Risk":  57609,
+                                   "Low Risk":  8805
+                               },
+                   "confusion_matrix":  [
+                                            [
+                                                1682,
+                                                1900,
+                                                4
+                                            ],
+                                            [
+                                                589,
+                                                55381,
+                                                1639
+                                            ],
+                                            [
+                                                2,
+                                                3784,
+                                                5019
+                                            ]
+                                        ],
+                   "fit_seconds":  15.858506917953491
+               },
+               {
+                   "accuracy":  0.8866285714285714,
+                   "balanced_accuracy":  0.659236350172984,
+                   "macro_f1":  0.7137230923867341,
+                   "weighted_f1":  0.8783078270802697,
+                   "high_risk_precision":  0.7446709916589435,
+                   "high_risk_recall":  0.44800669082798994,
+                   "high_risk_f1":  0.5594429939077459,
+                   "medium_risk_precision":  0.9055377783582577,
+                   "medium_risk_recall":  0.9628009512402576,
+                   "medium_risk_f1":  0.933291828269996,
+                   "low_risk_precision":  0.7573596358118361,
+                   "low_risk_recall":  0.5669014084507042,
+                   "low_risk_f1":  0.6484344549824607,
+                   "roc_auc_ovr_macro":  0.9424451139725072,
+                   "high_risk_pr_auc":  0.6796424588774796,
+                   "medium_risk_pr_auc":  0.9767851169707885,
+                   "low_risk_pr_auc":  0.7643429733148553,
+                   "macro_pr_auc":  0.8069235163877079,
+                   "support":  {
+                                   "High Risk":  3587,
+                                   "Medium Risk":  57609,
+                                   "Low Risk":  8804
+                               },
+                   "confusion_matrix":  [
+                                            [
+                                                1607,
+                                                1978,
+                                                2
+                                            ],
+                                            [
+                                                546,
+                                                55466,
+                                                1597
+                                            ],
+                                            [
+                                                5,
+                                                3808,
+                                                4991
+                                            ]
+                                        ],
+                   "fit_seconds":  15.495164394378662
+               }
+           ],
+    "val":  {
+                "accuracy":  0.8869866666666667,
+                "balanced_accuracy":  0.6611776485659534,
+                "macro_f1":  0.7141733596000136,
+                "weighted_f1":  0.8789234189214544,
+                "high_risk_precision":  0.7301317467063323,
+                "high_risk_recall":  0.4471629359708485,
+                "high_risk_f1":  0.5546408393866021,
+                "medium_risk_precision":  0.9063286889373846,
+                "medium_risk_recall":  0.9621703065258247,
+                "medium_risk_f1":  0.9334150615712253,
+                "low_risk_precision":  0.7608146067415731,
+                "low_risk_recall":  0.5741997032011872,
+                "low_risk_f1":  0.6544641778422133,
+                "roc_auc_ovr_macro":  0.9394562249719689,
+                "high_risk_pr_auc":  0.6734912892478593,
+                "medium_risk_pr_auc":  0.9744234118871639,
+                "low_risk_pr_auc":  0.7635136091628089,
+                "macro_pr_auc":  0.803809436765944,
+                "support":  {
+                                "High Risk":  3842,
+                                "Medium Risk":  61724,
+                                "Low Risk":  9434
+                            },
+                "confusion_matrix":  [
+                                         [
+                                             1718,
+                                             2121,
+                                             3
+                                         ],
+                                         [
+                                             635,
+                                             59389,
+                                             1700
+                                         ],
+                                         [
+                                             0,
+                                             4017,
+                                             5417
+                                         ]
+                                     ]
+            },
+    "final_fit_seconds":  20.027984619140625,
+    "saved_model_size_mb":  0.583921,
+    "saved_model_path":  "models/pipeline/hgb.joblib",
+    "permutation_importance_val":  {
+                                       "features":  [
+                                                        "Semester_ID",
+                                                        "Age",
+                                                        "Gender",
+                                                        "Region_Type",
+                                                        "Family_Size",
+                                                        "Major_Subject",
+                                                        "Parent_Education",
+                                                        "Family_Income_Level",
+                                                        "Internet_Quality",
+                                                        "Study_Space_Quality",
+                                                        "Previous_GPA",
+                                                        "Number_of_Failed_Courses",
+                                                        "Total_Credits_Earned",
+                                                        "Weekly_Study_Hours",
+                                                        "Attendance_Rate",
+                                                        "Library_Visits_Per_Month",
+                                                        "Extracurricular_Hours",
+                                                        "Sleep_Hours",
+                                                        "Social_Media_Usage_Hours",
+                                                        "Stress_Level",
+                                                        "Motivation_Score",
+                                                        "Self_Efficacy_Score",
+                                                        "Midterm_Mark",
+                                                        "previous_failure_flag",
+                                                        "study_engagement_score",
+                                                        "digital_distraction_score",
+                                                        "learning_support_score"
+                                                    ],
+                                       "mean":  [
+                                                    0.0,
+                                                    1.5760945338653503E-05,
+                                                    0.0,
+                                                    0.0,
+                                                    0.0,
+                                                    7.4981948011550628E-05,
+                                                    0.0,
+                                                    0.0,
+                                                    0.021875651934470424,
+                                                    0.00013740733040116618,
+                                                    0.12107588133091507,
+                                                    -0.0002915858816222583,
+                                                    0.0001263124935417803,
+                                                    0.2218502753066887,
+                                                    0.030466638624492948,
+                                                    0.003399895926638733,
+                                                    0.00014571703342725062,
+                                                    -0.0003367727487982493,
+                                                    0.0003132290404620486,
+                                                    0.1262421979941384,
+                                                    0.029570100950034428,
+                                                    0.031354026134563805,
+                                                    0.06178485468376271,
+                                                    0.0,
+                                                    0.008639832171225548,
+                                                    0.0,
+                                                    0.00048794370725506003
+                                                ],
+                                       "std":  [
+                                                   0.0,
+                                                   7.880096610044032E-05,
+                                                   0.0,
+                                                   0.0,
+                                                   0.0,
+                                                   8.9837559725450749E-05,
+                                                   0.0,
+                                                   0.0,
+                                                   0.001866135408202662,
+                                                   0.00015291224333042845,
+                                                   0.001534804273360188,
+                                                   0.0014775990693706852,
+                                                   2.7879751532865506E-05,
+                                                   0.004663506192611841,
+                                                   0.0010362210652379545,
+                                                   0.0005254157772108781,
+                                                   0.00020607500494159147,
+                                                   0.00032037968230452053,
+                                                   0.0001922916995431195,
+                                                   0.006679878592068311,
+                                                   0.0019209125982037692,
+                                                   0.0010074895852524772,
+                                                   0.003167933996261331,
+                                                   0.0,
+                                                   0.0006040438592324626,
+                                                   0.0,
+                                                   0.00029581117237783373
+                                               ],
+                                       "scoring":  "f1_macro",
+                                       "n_samples":  20000,
+                                       "n_repeats":  3
+                                   }
+}

@@ -1,0 +1,41 @@
+{
+  "train": {
+    "n": 350000,
+    "class_counts": {
+      "High Risk": 17931,
+      "Medium Risk": 288046,
+      "Low Risk": 44023
+    },
+    "class_share": {
+      "High Risk": 0.051231428571428574,
+      "Medium Risk": 0.8229885714285714,
+      "Low Risk": 0.12578
+    }
+  },
+  "val": {
+    "n": 75000,
+    "class_counts": {
+      "High Risk": 3842,
+      "Medium Risk": 61724,
+      "Low Risk": 9434
+    },
+    "class_share": {
+      "High Risk": 0.05122666666666666,
+      "Medium Risk": 0.8229866666666666,
+      "Low Risk": 0.12578666666666666
+    }
+  },
+  "test": {
+    "n": 75000,
+    "class_counts": {
+      "High Risk": 3842,
+      "Medium Risk": 61724,
+      "Low Risk": 9434
+    },
+    "class_share": {
+      "High Risk": 0.05122666666666666,
+      "Medium Risk": 0.8229866666666666,
+      "Low Risk": 0.12578666666666666
+    }
+  }
+}

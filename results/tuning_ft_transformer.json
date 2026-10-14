@@ -1,0 +1,248 @@
+{
+  "model": "ft_transformer",
+  "label": "FT-Transformer (100k subsample; no CV)",
+  "seed": 42,
+  "scored_on": "validation",
+  "criterion": [
+    "high_risk_f1",
+    "macro_f1"
+  ],
+  "grid": {
+    "lr": [
+      0.0003,
+      0.001
+    ],
+    "d_token": [
+      64
+    ],
+    "n_blocks": [
+      2
+    ]
+  },
+  "training_rows": 100000,
+  "results": [
+    {
+      "params": {
+        "lr": 0.0003,
+        "d_token": 64,
+        "n_blocks": 2,
+        "epochs": 6
+      },
+      "val": {
+        "accuracy": 0.8856,
+        "balanced_accuracy": 0.7000977296579958,
+        "macro_f1": 0.7301916583643239,
+        "weighted_f1": 0.8806744913992608,
+        "high_risk_precision": 0.6371369903197419,
+        "high_risk_recall": 0.5653305570015617,
+        "high_risk_f1": 0.5990897807199007,
+        "medium_risk_precision": 0.9130698332271251,
+        "medium_risk_recall": 0.9517529648110945,
+        "medium_risk_f1": 0.9320101853834988,
+        "low_risk_precision": 0.7586872586872587,
+        "low_risk_recall": 0.5832096671613314,
+        "low_risk_f1": 0.6594750089895721,
+        "roc_auc_ovr_macro": 0.9412610213379979,
+        "high_risk_pr_auc": 0.6749374132315124,
+        "medium_risk_pr_auc": 0.9761005224462729,
+        "low_risk_pr_auc": 0.768774100398824,
+        "macro_pr_auc": 0.8066040120255363,
+        "support": {
+          "High Risk": 3842,
+          "Medium Risk": 61724,
+          "Low Risk": 9434
+        },
+        "confusion_matrix": [
+          [
+            2172,
+            1666,
+            4
+          ],
+          [
+            1232,
+            58746,
+            1746
+          ],
+          [
+            5,
+            3927,
+            5502
+          ]
+        ]
+      },
+      "per_epoch": [
+        {
+          "epoch": 1,
+          "high_risk_f1": 0.46445344129554655,
+          "macro_f1": 0.6646205673132721
+        },
+        {
+          "epoch": 2,
+          "high_risk_f1": 0.5004414621225499,
+          "macro_f1": 0.6942341728231725
+        },
+        {
+          "epoch": 3,
+          "high_risk_f1": 0.5061094386399858,
+          "macro_f1": 0.705344941762423
+        },
+        {
+          "epoch": 4,
+          "high_risk_f1": 0.522051282051282,
+          "macro_f1": 0.6931993316558036
+        },
+        {
+          "epoch": 5,
+          "high_risk_f1": 0.5701329163408914,
+          "macro_f1": 0.7256357717241532
+        },
+        {
+          "epoch": 6,
+          "high_risk_f1": 0.5990897807199007,
+          "macro_f1": 0.7301916583643239
+        },
+        {
+          "epoch": 7,
+          "high_risk_f1": 0.5596967782691092,
+          "macro_f1": 0.7114665086746617
+        },
+        {
+          "epoch": 8,
+          "high_risk_f1": 0.536436215389842,
+          "macro_f1": 0.716969774580302
+        },
+        {
+          "epoch": 9,
+          "high_risk_f1": 0.5502958579881657,
+          "macro_f1": 0.708758529117179
+        },
+        {
+          "epoch": 10,
+          "high_risk_f1": 0.570407211687908,
+          "macro_f1": 0.7017353250590045
+        }
+      ],
+      "seconds": 1174.0459287166595,
+      "grid_point": {
+        "lr": 0.0003,
+        "d_token": 64,
+        "n_blocks": 2
+      }
+    },
+    {
+      "params": {
+        "lr": 0.001,
+        "d_token": 64,
+        "n_blocks": 2,
+        "epochs": 10
+      },
+      "val": {
+        "accuracy": 0.88688,
+        "balanced_accuracy": 0.6651925748929783,
+        "macro_f1": 0.7165640997695069,
+        "weighted_f1": 0.8789968247029128,
+        "high_risk_precision": 0.7158818834796489,
+        "high_risk_recall": 0.46694429984383135,
+        "high_risk_f1": 0.5652173913043478,
+        "medium_risk_precision": 0.9064069488756926,
+        "medium_risk_recall": 0.9619596915300369,
+        "medium_risk_f1": 0.9333574364738153,
+        "low_risk_precision": 0.7651352511807643,
+        "low_risk_recall": 0.5666737333050668,
+        "low_risk_f1": 0.6511174715303575,
+        "roc_auc_ovr_macro": 0.9418983719779392,
+        "high_risk_pr_auc": 0.6772613675287705,
+        "medium_risk_pr_auc": 0.9766898517781502,
+        "low_risk_pr_auc": 0.7657528920555936,
+        "macro_pr_auc": 0.806568037120838,
+        "support": {
+          "High Risk": 3842,
+          "Medium Risk": 61724,
+          "Low Risk": 9434
+        },
+        "confusion_matrix": [
+          [
+            1794,
+            2045,
+            3
+          ],
+          [
+            710,
+            59376,
+            1638
+          ],
+          [
+            2,
+            4086,
+            5346
+          ]
+        ]
+      },
+      "per_epoch": [
+        {
+          "epoch": 1,
+          "high_risk_f1": 0.500083458521115,
+          "macro_f1": 0.64633550711212
+        },
+        {
+          "epoch": 2,
+          "high_risk_f1": 0.48688465684513116,
+          "macro_f1": 0.6964277187804666
+        },
+        {
+          "epoch": 3,
+          "high_risk_f1": 0.5441743503772003,
+          "macro_f1": 0.7146146721747839
+        },
+        {
+          "epoch": 4,
+          "high_risk_f1": 0.5548681211331814,
+          "macro_f1": 0.7068139678361126
+        },
+        {
+          "epoch": 5,
+          "high_risk_f1": 0.47940630797773653,
+          "macro_f1": 0.6877271065669349
+        },
+        {
+          "epoch": 6,
+          "high_risk_f1": 0.547998698340384,
+          "macro_f1": 0.7157552164785433
+        },
+        {
+          "epoch": 7,
+          "high_risk_f1": 0.5502169371685682,
+          "macro_f1": 0.7055780257149474
+        },
+        {
+          "epoch": 8,
+          "high_risk_f1": 0.563907389787504,
+          "macro_f1": 0.7259310709759407
+        },
+        {
+          "epoch": 9,
+          "high_risk_f1": 0.5137517630465445,
+          "macro_f1": 0.6894728693559037
+        },
+        {
+          "epoch": 10,
+          "high_risk_f1": 0.5652173913043478,
+          "macro_f1": 0.7165640997695069
+        }
+      ],
+      "seconds": 2533.473488330841,
+      "grid_point": {
+        "lr": 0.001,
+        "d_token": 64,
+        "n_blocks": 2
+      }
+    }
+  ],
+  "best_params": {
+    "lr": 0.0003,
+    "d_token": 64,
+    "n_blocks": 2,
+    "epochs": 6
+  },
+  "max_epochs": 10
+}

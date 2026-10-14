@@ -1,0 +1,68 @@
+{
+  "labels": {
+    "source": "Final_Exam_Score",
+    "rule": "High Risk if score < 40; Medium Risk if 40 <= score < 70; Low Risk if score >= 70",
+    "checked_against_original_counts": {
+      "High Risk": 25615,
+      "Medium Risk": 411494,
+      "Low Risk": 62891
+    }
+  },
+  "split": {
+    "seed": 42,
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15,
+    "stratified": true
+  },
+  "sample": null,
+  "cv_folds": 5,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "models": {
+    "majority": "Majority class (baseline)",
+    "midterm_lr": "LR, Midterm_Mark only (baseline)",
+    "logreg": "Logistic Regression",
+    "logreg_balanced": "Logistic Regression (balanced)",
+    "rf_capped": "RF (capped, tuned)",
+    "rf_unconstrained": "RF (unconstrained)",
+    "hgb": "HistGradientBoosting",
+    "xgb": "XGBoost",
+    "lgbm": "LightGBM",
+    "catboost": "CatBoost",
+    "mlp": "MLP (PyTorch; 100k subsample)",
+    "ft_transformer": "FT-Transformer (100k subsample; no CV)"
+  },
+  "selection": {
+    "on": "validation",
+    "metric": "high_risk_f1",
+    "tiebreak": "macro_f1"
+  },
+  "dropped_columns": [
+    "Student_ID",
+    "University_Name",
+    "Home_City",
+    "Final_Exam_Score",
+    "Semester_ID (dropped by the preprocessor)"
+  ],
+  "deep_models": {
+    "models": [
+      "MLP (PyTorch; 100k subsample)",
+      "FT-Transformer (100k subsample; no CV)"
+    ],
+    "training_rows": 100000,
+    "note": "Deep models are trained on a stratified subsample of the training set (seed 42) because of CPU time; validation and test sets are unchanged. FT-Transformer has no CV (final fit per seed only)."
+  },
+  "added_models_cpu_threads": "all",
+  "versions": {
+    "python": "3.13.13",
+    "scikit-learn": "1.7.1",
+    "numpy": "2.3.1",
+    "pandas": "2.3.1"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "model": "ft_transformer",
+  "label": "FT-Transformer (100k subsample; no CV)",
+  "seed": 4,
+  "params": {
+    "lr": 0.0003,
+    "d_token": 64,
+    "n_blocks": 2,
+    "epochs": 6
+  },
+  "cv": [],
+  "training_rows": 100000,
+  "val": {
+    "accuracy": 0.88516,
+    "balanced_accuracy": 0.7038150636782153,
+    "macro_f1": 0.7314877223184525,
+    "weighted_f1": 0.8820791519429351,
+    "high_risk_precision": 0.6936773255813954,
+    "high_risk_recall": 0.4968766267568974,
+    "high_risk_f1": 0.5790112223233242,
+    "medium_risk_precision": 0.9207996071660516,
+    "medium_risk_recall": 0.9417892553949841,
+    "medium_risk_f1": 0.9311761643506468,
+    "low_risk_precision": 0.6961719863990348,
+    "low_risk_recall": 0.6727793088827645,
+    "low_risk_f1": 0.6842757802813865,
+    "roc_auc_ovr_macro": 0.9415159975541574,
+    "high_risk_pr_auc": 0.672433713290343,
+    "medium_risk_pr_auc": 0.9764274011737778,
+    "low_risk_pr_auc": 0.7658597751684988,
+    "macro_pr_auc": 0.8049069632108732,
+    "support": {
+      "High Risk": 3842,
+      "Medium Risk": 61724,
+      "Low Risk": 9434
+    },
+    "confusion_matrix": [
+      [
+        1909,
+        1932,
+        1
+      ],
+      [
+        824,
+        58131,
+        2769
+      ],
+      [
+        19,
+        3068,
+        6347
+      ]
+    ]
+  },
+  "final_fit_seconds": 19.018381595611572
+}

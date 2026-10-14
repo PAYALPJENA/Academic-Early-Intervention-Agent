@@ -1,0 +1,362 @@
+{
+  "model": "xgb",
+  "label": "XGBoost",
+  "seed": 42,
+  "scored_on": "validation",
+  "criterion": [
+    "high_risk_f1",
+    "macro_f1"
+  ],
+  "grid": {
+    "max_depth": [
+      4,
+      6,
+      8
+    ],
+    "learning_rate": [
+      0.05,
+      0.1
+    ],
+    "n_estimators": [
+      300
+    ]
+  },
+  "training_rows": 350000,
+  "results": [
+    {
+      "params": {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "n_estimators": 300
+      },
+      "val": {
+        "accuracy": 0.8857733333333333,
+        "balanced_accuracy": 0.6396658903321769,
+        "macro_f1": 0.7012885509417361,
+        "weighted_f1": 0.8754045824124831,
+        "high_risk_precision": 0.7647914645974782,
+        "high_risk_recall": 0.41046330036439355,
+        "high_risk_f1": 0.5342140921409214,
+        "medium_risk_precision": 0.9006073576175908,
+        "medium_risk_recall": 0.9681485321754909,
+        "medium_risk_f1": 0.9331573975030646,
+        "low_risk_precision": 0.7741837509491268,
+        "low_risk_recall": 0.5403858384566462,
+        "low_risk_f1": 0.6364941631812223,
+        "roc_auc_ovr_macro": 0.9367683126028251,
+        "high_risk_pr_auc": 0.6664826600550798,
+        "medium_risk_pr_auc": 0.972699461171593,
+        "low_risk_pr_auc": 0.7585660394451837,
+        "macro_pr_auc": 0.7992493868906189,
+        "support": {
+          "High Risk": 3842,
+          "Medium Risk": 61724,
+          "Low Risk": 9434
+        },
+        "confusion_matrix": [
+          [
+            1577,
+            2262,
+            3
+          ],
+          [
+            482,
+            59758,
+            1484
+          ],
+          [
+            3,
+            4333,
+            5098
+          ]
+        ]
+      },
+      "seconds": 36.81871247291565,
+      "grid_point": {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "n_estimators": 300
+      }
+    },
+    {
+      "params": {
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "n_estimators": 300
+      },
+      "val": {
+        "accuracy": 0.8878266666666667,
+        "balanced_accuracy": 0.6613298375058361,
+        "macro_f1": 0.7158029566079472,
+        "weighted_f1": 0.8796242606072662,
+        "high_risk_precision": 0.7431906614785992,
+        "high_risk_recall": 0.4474232170744404,
+        "high_risk_f1": 0.558570268074736,
+        "medium_risk_precision": 0.9063333587379011,
+        "medium_risk_recall": 0.963320588425896,
+        "medium_risk_f1": 0.9339584854981976,
+        "low_risk_precision": 0.7636260943236374,
+        "low_risk_recall": 0.5732457070171719,
+        "low_risk_f1": 0.6548801162509083,
+        "roc_auc_ovr_macro": 0.9411511116349013,
+        "high_risk_pr_auc": 0.6812287239415336,
+        "medium_risk_pr_auc": 0.975342811601283,
+        "low_risk_pr_auc": 0.7670600652869269,
+        "macro_pr_auc": 0.8078772002765812,
+        "support": {
+          "High Risk": 3842,
+          "Medium Risk": 61724,
+          "Low Risk": 9434
+        },
+        "confusion_matrix": [
+          [
+            1719,
+            2120,
+            3
+          ],
+          [
+            593,
+            59460,
+            1671
+          ],
+          [
+            1,
+            4025,
+            5408
+          ]
+        ]
+      },
+      "seconds": 24.310635566711426,
+      "grid_point": {
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "n_estimators": 300
+      }
+    },
+    {
+      "params": {
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "n_estimators": 300
+      },
+      "val": {
+        "accuracy": 0.8876266666666667,
+        "balanced_accuracy": 0.6616088219692692,
+        "macro_f1": 0.7157034603205009,
+        "weighted_f1": 0.8794633554460993,
+        "high_risk_precision": 0.7401372212692967,
+        "high_risk_recall": 0.44924518479958353,
+        "high_risk_f1": 0.5591188856494979,
+        "medium_risk_precision": 0.9063257558432054,
+        "medium_risk_recall": 0.9630775711230639,
+        "medium_risk_f1": 0.9338402205587804,
+        "low_risk_precision": 0.7629608701794038,
+        "low_risk_recall": 0.5725037099851601,
+        "low_risk_f1": 0.6541512747532248,
+        "roc_auc_ovr_macro": 0.9404673067200172,
+        "high_risk_pr_auc": 0.6791729438416841,
+        "medium_risk_pr_auc": 0.9749895254945214,
+        "low_risk_pr_auc": 0.7655328827464114,
+        "macro_pr_auc": 0.8065651173608724,
+        "support": {
+          "High Risk": 3842,
+          "Medium Risk": 61724,
+          "Low Risk": 9434
+        },
+        "confusion_matrix": [
+          [
+            1726,
+            2113,
+            3
+          ],
+          [
+            604,
+            59445,
+            1675
+          ],
+          [
+            2,
+            4031,
+            5401
+          ]
+        ]
+      },
+      "seconds": 26.219543933868408,
+      "grid_point": {
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "n_estimators": 300
+      }
+    },
+    {
+      "params": {
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "n_estimators": 300
+      },
+      "val": {
+        "accuracy": 0.88788,
+        "balanced_accuracy": 0.6721705619914115,
+        "macro_f1": 0.7211805226043456,
+        "weighted_f1": 0.8808048118618468,
+        "high_risk_precision": 0.7224899598393574,
+        "high_risk_recall": 0.4682457053617907,
+        "high_risk_f1": 0.5682248894504106,
+        "medium_risk_precision": 0.9091606685185469,
+        "medium_risk_recall": 0.9597563346510272,
+        "medium_risk_f1": 0.933773633977759,
+        "low_risk_precision": 0.7552713916473949,
+        "low_risk_recall": 0.5885096459614162,
+        "low_risk_f1": 0.6615430443848674,
+        "roc_auc_ovr_macro": 0.9410786857646039,
+        "high_risk_pr_auc": 0.6766121525622292,
+        "medium_risk_pr_auc": 0.9755804270772082,
+        "low_risk_pr_auc": 0.7661181455205364,
+        "macro_pr_auc": 0.8061035750533246,
+        "support": {
+          "High Risk": 3842,
+          "Medium Risk": 61724,
+          "Low Risk": 9434
+        },
+        "confusion_matrix": [
+          [
+            1799,
+            2041,
+            2
+          ],
+          [
+            687,
+            59240,
+            1797
+          ],
+          [
+            4,
+            3878,
+            5552
+          ]
+        ]
+      },
+      "seconds": 24.46115756034851,
+      "grid_point": {
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "n_estimators": 300
+      }
+    },
+    {
+      "params": {
+        "max_depth": 8,
+        "learning_rate": 0.05,
+        "n_estimators": 300
+      },
+      "val": {
+        "accuracy": 0.88748,
+        "balanced_accuracy": 0.6699884033426482,
+        "macro_f1": 0.719617546542548,
+        "weighted_f1": 0.8802504575120984,
+        "high_risk_precision": 0.7247967479674797,
+        "high_risk_recall": 0.46408120770432065,
+        "high_risk_f1": 0.5658521104411298,
+        "medium_risk_precision": 0.9086308428413692,
+        "medium_risk_recall": 0.9599183461862485,
+        "medium_risk_f1": 0.9335707307849872,
+        "low_risk_precision": 0.7539552645935624,
+        "low_risk_recall": 0.5859656561373755,
+        "low_risk_f1": 0.6594297984015269,
+        "roc_auc_ovr_macro": 0.9400917891652475,
+        "high_risk_pr_auc": 0.6767610375890146,
+        "medium_risk_pr_auc": 0.9747162923855025,
+        "low_risk_pr_auc": 0.7645622715573044,
+        "macro_pr_auc": 0.8053465338439404,
+        "support": {
+          "High Risk": 3842,
+          "Medium Risk": 61724,
+          "Low Risk": 9434
+        },
+        "confusion_matrix": [
+          [
+            1783,
+            2055,
+            4
+          ],
+          [
+            674,
+            59250,
+            1800
+          ],
+          [
+            3,
+            3903,
+            5528
+          ]
+        ]
+      },
+      "seconds": 31.887242317199707,
+      "grid_point": {
+        "max_depth": 8,
+        "learning_rate": 0.05,
+        "n_estimators": 300
+      }
+    },
+    {
+      "params": {
+        "max_depth": 8,
+        "learning_rate": 0.1,
+        "n_estimators": 300
+      },
+      "val": {
+        "accuracy": 0.8867866666666666,
+        "balanced_accuracy": 0.6734746613589109,
+        "macro_f1": 0.7204261731645337,
+        "weighted_f1": 0.8799793988906142,
+        "high_risk_precision": 0.7122161315583398,
+        "high_risk_recall": 0.47345132743362833,
+        "high_risk_f1": 0.5687929956222639,
+        "medium_risk_precision": 0.9093481369850375,
+        "medium_risk_recall": 0.9580390123776813,
+        "medium_risk_f1": 0.9330587836185337,
+        "low_risk_precision": 0.7490899285425374,
+        "low_risk_recall": 0.5889336442654229,
+        "low_risk_f1": 0.659426740252804,
+        "roc_auc_ovr_macro": 0.9391771767638706,
+        "high_risk_pr_auc": 0.6700714262817183,
+        "medium_risk_pr_auc": 0.9744061812310283,
+        "low_risk_pr_auc": 0.7617902352544124,
+        "macro_pr_auc": 0.8020892809223863,
+        "support": {
+          "High Risk": 3842,
+          "Medium Risk": 61724,
+          "Low Risk": 9434
+        },
+        "confusion_matrix": [
+          [
+            1819,
+            2020,
+            3
+          ],
+          [
+            732,
+            59134,
+            1858
+          ],
+          [
+            3,
+            3875,
+            5556
+          ]
+        ]
+      },
+      "seconds": 30.83832025527954,
+      "grid_point": {
+        "max_depth": 8,
+        "learning_rate": 0.1,
+        "n_estimators": 300
+      }
+    }
+  ],
+  "best_params": {
+    "max_depth": 8,
+    "learning_rate": 0.1,
+    "n_estimators": 300
+  }
+}

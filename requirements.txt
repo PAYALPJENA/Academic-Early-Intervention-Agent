@@ -1,0 +1,10 @@
+streamlit>=1.40
+pandas>=2.2
+numpy>=2.0
+scikit-learn==1.7.1
+joblib>=1.4
+catboost>=1.2
+matplotlib>=3.8
+
+# Optional pipeline extras (versions and installable lines are in requirements-extras.txt):
+# xgboost, lightgbm, torch
